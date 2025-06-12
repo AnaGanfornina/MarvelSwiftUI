@@ -30,9 +30,22 @@
 		A10132FC2DFB2519009D3228 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A10134452DFB42BC009D3228 /* Exceptions for "AGMarvelApp" folder in "AGMarvelApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A10132CC2DFB24D0009D3228 /* AGMarvelApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A10132CF2DFB24D0009D3228 /* AGMarvelApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A10134452DFB42BC009D3228 /* Exceptions for "AGMarvelApp" folder in "AGMarvelApp" target */,
+			);
 			path = AGMarvelApp;
 			sourceTree = "<group>";
 		};
@@ -413,6 +426,7 @@
 				DEVELOPMENT_TEAM = DRKH5MTLPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AGMarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -442,6 +456,7 @@
 				DEVELOPMENT_TEAM = DRKH5MTLPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AGMarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
