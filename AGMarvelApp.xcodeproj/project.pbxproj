@@ -27,6 +27,7 @@
 		A10132CD2DFB24D0009D3228 /* AGMarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGMarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10132DD2DFB24D3009D3228 /* AGMarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGMarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10132E72DFB24D3009D3228 /* AGMarvelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGMarvelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10132FC2DFB2519009D3228 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +89,13 @@
 				A10132CD2DFB24D0009D3228 /* AGMarvelApp.app */,
 				A10132DD2DFB24D3009D3228 /* AGMarvelAppTests.xctest */,
 				A10132E72DFB24D3009D3228 /* AGMarvelAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10133002DFB2519009D3228 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +206,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A10132CE2DFB24D0009D3228 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A10133002DFB2519009D3228 /* Products */;
+					ProjectRef = A10132FC2DFB2519009D3228 /* AGMarvelApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A10132CC2DFB24D0009D3228 /* AGMarvelApp */,
