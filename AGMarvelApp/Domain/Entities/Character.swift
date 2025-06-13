@@ -27,19 +27,42 @@
 
 import Foundation
 
-// MARK: - Hero
+// MARK: - Character
 
 struct Character: Codable, Identifiable{
-    let id: Int //TODO: Pasar a u uuid
+    let id: Int
     let name: String
     let description: String
-    let photo: String
+    let photo: CharacterThumbnail
     //let series: Serie
+    
+    enum CodingKeys: String, CodingKey {
+            case id, name, description
+            case photo = "thumbnail"
+        }
+
 }
 
-// MARK: - Hero
+// MARK: - CharacterDataWrapper
+
+struct CharacterDataWrapper: Codable{
+    let data: DataCharacterContainer
+}
+
+// MARK: - DataCharacterContainer
 
 /// It contains the information coming from the API.
-struct dataCharacterContainer: Codable {
-    let result: [Character]
+struct DataCharacterContainer: Codable {
+    let results: [Character]
+}
+
+// MARK: - CharacterThumbnail
+struct CharacterThumbnail: Codable {
+    let path: String
+    let extensionImage: String
+    
+    enum CodingKeys: String, CodingKey {
+        case path
+        case extensionImage = "extension"
+    }
 }

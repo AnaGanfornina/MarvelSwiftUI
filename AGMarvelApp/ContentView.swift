@@ -8,16 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var characters: [Character] = []
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            List {
+                ForEach(characters) { character in
+                    Text(character.name)
+                    /*
+                    AsyncImage(url: URL(string: character.photo)){ photo in
+                        photo
+                    }*/
+                    
+                }
+            }
+
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            }
+            .padding()
         }
-        .padding()
+        .onAppear {
+            Task {
+                characters = await CharacterUseCase().getCharacter()
+            }
+        }
     }
 }
+
 
 #Preview {
     ContentView()
