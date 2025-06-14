@@ -12,7 +12,7 @@ import Foundation
 protocol CharacterUseCaseProtocol {
     var repo: CharacterRepositoryProtocol {get set}
     
-    func getCharacter() async -> [Character]
+    func getCharacter() async -> [Character] 
 }
 
 // MARK: - Use Case Character
