@@ -4,26 +4,7 @@
 //
 //  Created by Ana on 12/6/25.
 //
-/*
- struct HeroDTO: Codable{
-     
-     let identifier: String
-     let name : String
-     let description: String
-     let photo: String
-     let favorite: Bool
-     
-     
-     enum CodingKeys: String, CodingKey {
-         case identifier = "id"
-         case name
-         case description
-         case photo
-         case favorite
-     }
- }
- 
- */
+
 
 import Foundation
 
@@ -39,6 +20,11 @@ struct Character: Codable, Identifiable{
     enum CodingKeys: String, CodingKey {
             case id, name, description
             case photo = "thumbnail"
+        }
+    
+    var thumbnailURL: String {
+        let _ = photo.path
+        return "\(photo.path).\(photo.extensionImage)"
         }
 
 }
@@ -66,3 +52,6 @@ struct CharacterThumbnail: Codable {
         case extensionImage = "extension"
     }
 }
+
+
+
