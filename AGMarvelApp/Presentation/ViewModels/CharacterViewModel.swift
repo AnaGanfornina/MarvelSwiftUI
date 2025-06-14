@@ -8,7 +8,18 @@
 import Foundation
 
 @Observable
-
 final class CharacterViewModel{
-    var charapterData = [Character]
+    var characterData = [Character]()
+    
+    private var useCaseCharacter: CharacterUseCaseProtocol
+    
+    init(useCase: CharacterUseCaseProtocol = CharacterUseCase()) {
+        self.useCaseCharacter = useCase
+    }
+    
+    @MainActor
+    func getCharacter() async {
+        let data = await useCaseCharacter.getCharacter()
+        self.characterData = data
+    }
 }
