@@ -14,9 +14,10 @@ final class NetworkCharacterTest: XCTestCase {
     var sut: NetworkCharacters!
 
     override func setUpWithError() throws {
-        try super.setUpWithError(
+        try super.setUpWithError()
+            sut = NetworkCharacters()
             
-        )
+        
     }
 
     override func tearDownWithError() throws {
@@ -36,6 +37,12 @@ final class NetworkCharacterTest: XCTestCase {
         // Then
         
         XCTAssertEqual(expectedCharacters.count, 20)
+        let character = try XCTUnwrap(expectedCharacters.first)
+        XCTAssertEqual(character.name, "3-D Man")
+        XCTAssertEqual(character.id, 1011334)
+        XCTAssertEqual(character.thumbnailURL, "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg")
+        let expectedDesc = ""
+        XCTAssertEqual(character.description, expectedDesc)
     }
 
     

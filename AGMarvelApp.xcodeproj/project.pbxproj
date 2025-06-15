@@ -29,6 +29,7 @@
 		A10132E72DFB24D3009D3228 /* AGMarvelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGMarvelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10132FC2DFB2519009D3228 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
 		A11F5B0F2DFEEA7F00B9D066 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
+		A1BED17D2DFF160200699AA7 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
 		A1EEAF662DFC54DB00F04730 /* AGMarvelApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AGMarvelApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +118,13 @@
 			sourceTree = "<group>";
 		};
 		A11F5B142DFEEA7F00B9D066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1BED1822DFF160200699AA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -237,6 +245,10 @@
 			productRefGroup = A10132CE2DFB24D0009D3228 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = A1BED1822DFF160200699AA7 /* Products */;
+					ProjectRef = A1BED17D2DFF160200699AA7 /* AGMarvelApp.xcodeproj */;
+				},
 				{
 					ProductGroup = A10133002DFB2519009D3228 /* Products */;
 					ProjectRef = A10132FC2DFB2519009D3228 /* AGMarvelApp.xcodeproj */;
