@@ -29,7 +29,6 @@ struct SerieRowView: View {
             Text(serie.description ?? "Sin descripción")
                 .font(.body)
                 .padding(.leading, 10)
-           
         }
     }
 }

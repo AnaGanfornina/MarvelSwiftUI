@@ -16,13 +16,10 @@ final class NetworkCharacterTest: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
             sut = NetworkCharacters()
-            
-        
     }
-
+    
     override func tearDownWithError() throws {
         try super.setUpWithError()
-        
     }
     
     func test_getCharacters() async throws {
@@ -44,8 +41,4 @@ final class NetworkCharacterTest: XCTestCase {
         let expectedDesc = ""
         XCTAssertEqual(character.description, expectedDesc)
     }
-
-    
-
 }
- 

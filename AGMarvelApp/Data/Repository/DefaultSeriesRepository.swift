@@ -15,7 +15,6 @@ final class SeriesRepository: SeriesRepositoryProtocol{
     func getSeries(characterId: Int) async -> [Serie] {
         return await network.getSeries(characterId: characterId)
     }
-
 }
 // MARK: - Mock SeriesRepository
 
@@ -29,5 +28,4 @@ final class SeriesRepositoryMock: SeriesRepositoryProtocol{
     func getSeries(characterId: Int) async -> [Serie] {
         return await network.getSeries(characterId: characterId)
     }
-
 }

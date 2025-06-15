@@ -32,5 +32,4 @@ final class SeriesUseCaseTest: XCTestCase {
         let expectedDesc: String? = nil
         XCTAssertEqual(serie.description, expectedDesc)
     }
-
 }

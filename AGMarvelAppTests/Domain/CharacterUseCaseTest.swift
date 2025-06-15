@@ -32,5 +32,4 @@ final class CharacterUseCaseTest: XCTestCase {
         XCTAssertEqual(character.description, expectedDesc)
         XCTAssertEqual(character.thumbnailURL, "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg")
     }
-
 }

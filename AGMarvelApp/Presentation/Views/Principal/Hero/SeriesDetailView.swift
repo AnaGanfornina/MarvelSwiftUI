@@ -32,11 +32,8 @@ struct SeriesDetailView: View {
                 }
             }
         }
-        
-        
     }
 }
-
 
 #Preview {
     SeriesDetailView(characterSelected: 1009144)

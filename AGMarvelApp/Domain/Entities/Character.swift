@@ -52,6 +52,3 @@ struct CharacterThumbnail: Codable {
         case extensionImage = "extension"
     }
 }
-
-
-

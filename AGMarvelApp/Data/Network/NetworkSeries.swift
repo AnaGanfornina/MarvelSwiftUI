@@ -40,7 +40,6 @@ final class NetworkSeries: NetworkSeriesProtocol{
         return modelReturn
     }
 }
-
 // MARK: - Mock NetworkSeries
 
 
@@ -52,8 +51,4 @@ final class NetworkSeriesMock: NetworkSeriesProtocol{
         
         return [model1, model2]
     }
-    
-    
-    
-    
 }
