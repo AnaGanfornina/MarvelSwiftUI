@@ -20,7 +20,7 @@ struct CharacterView: View {
                 ForEach(viewModel.characterData){ character in
                     NavigationLink{
                         // Destination
-                        Text("CharacterDetailView \(character.name)")
+                        SeriesDetailView(characterSelected: character.id)
                         
                     } label: {
                         // Row
@@ -30,7 +30,7 @@ struct CharacterView: View {
                 }
             
             }//List
-            .navigationTitle("Marvel")
+            .navigationTitle("Marvel characters ")
             .onAppear{
                 Task{
                     await viewModel.getCharacter()
