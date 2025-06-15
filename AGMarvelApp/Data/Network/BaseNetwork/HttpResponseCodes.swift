@@ -7,9 +7,7 @@
 
 import Foundation
 
-
 // Server response codes
 struct HttpResponseCodes{
     static let SUCCES = 200
-    
 }

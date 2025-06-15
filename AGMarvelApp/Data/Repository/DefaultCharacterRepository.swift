@@ -30,6 +30,4 @@ final class CharacterRepositoryMock: CharacterRepositoryProtocol{
     func getCharacters() async -> [Character] {
         return await network.getCharacters()
     }
-    
-    
 }

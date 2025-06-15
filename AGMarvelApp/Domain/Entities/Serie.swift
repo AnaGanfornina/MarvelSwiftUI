@@ -13,8 +13,7 @@ struct Serie: Codable, Identifiable{
     let id: Int
     let title: String
     let description: String?
-    let photo: SeriesThumbnail // TODO: Puede que tenga que ser opcional
-    //let character: Character
+    let photo: SeriesThumbnail
     
     enum CodingKeys: String, CodingKey {
             case id, title, description
@@ -24,9 +23,7 @@ struct Serie: Codable, Identifiable{
     var thumbnailURL: String {
         return "\(photo.path).\(photo.extensionImage)"
         }
-
 }
-
 // MARK: - CharacterDataWrapper
 
 struct SeriesDataWrapper: Codable{
@@ -50,5 +47,3 @@ struct SeriesThumbnail: Codable {
         case extensionImage = "extension"
     }
 }
-
-

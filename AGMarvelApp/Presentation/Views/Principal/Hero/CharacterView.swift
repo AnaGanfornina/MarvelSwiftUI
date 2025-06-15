@@ -28,7 +28,6 @@ struct CharacterView: View {
                     }
                     
                 }
-            
             }//List
             .navigationTitle("Marvel characters ")
             .onAppear{
@@ -36,7 +35,6 @@ struct CharacterView: View {
                     await viewModel.getCharacter()
                 }
             }
-            
         }//Navigation
     }
 }
@@ -44,5 +42,3 @@ struct CharacterView: View {
 #Preview {
     CharacterView()
 }
-
-

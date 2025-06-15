@@ -14,13 +14,10 @@ final class NetworkSeriesTest: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
             sut = NetworkSeries()
-            
-        
     }
 
     override func tearDownWithError() throws {
         try super.setUpWithError()
-        
     }
     
     func test_getCharacters() async throws {
@@ -43,6 +40,4 @@ final class NetworkSeriesTest: XCTestCase {
         let expectedDesc: String? = nil
         XCTAssertEqual(serie.description, expectedDesc)
     }
-
-    
 }

@@ -43,7 +43,6 @@ final class NetworkCharacters: NetworkCharactersProtocol{
 
 // MARK: - Mock NetworkCharacter
 
-
 final class NetworkCharactersMock: NetworkCharactersProtocol{
     func getCharacters() async -> [Character] {
         let model1 = Character(id: 1011334, name: "3-D Man", description:  "", photo: CharacterThumbnail(path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784", extensionImage: "jpg"))
@@ -52,6 +51,4 @@ final class NetworkCharactersMock: NetworkCharactersProtocol{
         
         return [model1,model2]
     }
-    
-    
 }
